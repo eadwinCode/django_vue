@@ -1,4 +1,4 @@
-{% load static %} 
+{% load static %}
 {% load compress %}
 <!DOCTYPE html>
 <html lang="en">
@@ -12,13 +12,13 @@
   <body>
     <button>Checked</button>
     <div id="components-demo">
-      
+
       {% verbatim %}
-        
+
       {% endverbatim %}
     </div>
     {% compress parcel file myts %}
-        <script src="{% static 'js/index.js' %}"></script> 
+        <script src="{% static 'js/index.js' %}"></script>
     {% endcompress %}
   </body>
 </html>
