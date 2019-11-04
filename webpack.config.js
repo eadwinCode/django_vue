@@ -1,3 +1,4 @@
+// parceljs is not using the file
 const {join} = require('path');
 const { VueLoaderPlugin } = require('vue-loader');
 
