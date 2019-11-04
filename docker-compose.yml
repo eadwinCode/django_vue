@@ -10,3 +10,5 @@ services:
       - "8000:8000"
     volumes:
       - .:/home/docker/code
+      - ./.cache:/home/docker/code/.cache
+      - ./.tmp:/home/docker/code/.tmp

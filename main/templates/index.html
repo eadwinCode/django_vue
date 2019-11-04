@@ -10,13 +10,20 @@
     {% endcompress %}
   </head>
   <body>
-    <button>Checked</button>
-    <div id="components-demo">
-
-      {% verbatim %}
-
-      {% endverbatim %}
+    <div class="antd">
+      <div class="antd-logo">
+          <img src="{% static 'img/antd.svg' %}" alt="ant_logo">
+          <span>+</span>
+          <img src="{% static 'img/logo.png'%}" alt="vue_logo">
+      </div>
+      <a href="https://www.antdv.com/docs/vue/introduce/">Ant-vue-design</a>
     </div>
+    <div class="components">
+        <div id="components-demo">
+          </div>
+    </div>
+
+   
     {% compress parcel file myts %}
         <script src="{% static 'js/index.js' %}"></script>
     {% endcompress %}

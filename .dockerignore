@@ -1,0 +1,10 @@
+.env
+.md
+.yml
+.git
+db.sqlite3
+README.md
+Dockerfile
+venv/
+fixtures
+node_modules/
