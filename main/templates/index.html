@@ -1,12 +1,13 @@
 {% load static %}
 {% load compress %}
+{% load private_static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Vue Django Testing</title>
     {% compress css file style %}
-      <link rel="stylesheet" type="text/x-scss"  href="{% static 'css/style.scss'%}">
+      <link rel="stylesheet" type="text/x-scss"  href="{% private_static 'css/style.scss'%}">
     {% endcompress %}
   </head>
   <body>
@@ -27,7 +28,7 @@
 
    
     {% compress parcel file myts %}
-        <script src="{% static 'js/index.js' %}"></script>
+        <script src="{% private_static 'js/index.js' %}"></script>
     {% endcompress %}
   </body>
 </html>
