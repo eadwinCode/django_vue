@@ -128,3 +128,6 @@ COMPRESS_PRECOMPILERS = (
     ('text/stylus', 'stylus < {infile} > {outfile}'),
 )
 
+COMPRESS_PRIVATE_DIRS = [
+    os.path.join(BASE_DIR, 'frontend')
+]
