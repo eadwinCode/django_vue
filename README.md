@@ -1,7 +1,7 @@
 # django_vue
 
 ## Introduction
-A quick example of ant-design Vue with django template using Django-Compressor with Parceljs
+A quick example of ant-design Vue with django template using Django-Compressor Parceljs
 
 ## Quick Start
 ```docker-compose up --build```
