@@ -24,7 +24,6 @@ ADD package.json /home/docker/code
 
 RUN apk add git
 RUN pip install -r requirements.txt && \
-    pip install git+https://github.com/eadwinCode/django-compressor.git@develop && \
     npm install -g parcel && \
     npm install
 
