@@ -23,6 +23,7 @@ var/
 wheels/
 staticfiles/
 *.migrations/
+.cache/
 
 *.egg-info/
 .installed.cfg
@@ -93,7 +94,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-django-compressor-parceljs
+django-compressor-parceljs/
 node_modules/
 
 # Spyder project settings
