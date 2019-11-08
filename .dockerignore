@@ -8,3 +8,4 @@ Dockerfile
 venv/
 fixtures
 node_modules/
+django-compressor-parceljs/

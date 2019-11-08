@@ -58,8 +58,6 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'django_vue.wsgi.application'
-
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
@@ -116,9 +114,12 @@ STATICFILES_FINDERS = (
 )
 
 COMPRESS_ENABLED = True
+
 COMPRESS_REBUILD_TIMEOUT = 2592000  # (30 days in seconds)
 COMPRESS_OFFLINE = False
+
 COMPRESS_OFFLINE_TIMEOUT = 31536000  # (1 year in seconds)
+COMPRESS_OUTPUT_DIR = 'dev'
 
 COMPRESS_PRECOMPILERS = (
     ('text/coffeescript', 'coffee --compile --stdio'),

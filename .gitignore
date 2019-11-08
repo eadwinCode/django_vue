@@ -93,7 +93,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-django-compressor/
+django-compressor-parceljs
 node_modules/
 
 # Spyder project settings

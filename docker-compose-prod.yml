@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  web:
+    image: mrsme/django_vue
+    build: .
+    command: gunicorn -w 4 django_vue.wsgi:application --bind 0.0.0.0:8000
+    volumes:
+      - .:/home/docker/code
+  
+  nginx:
+    build: ./nginx
+    ports:
+      - 1337:80
+    depends_on:
+      - web
+    restart: always
+    volumes:
+      - .:/home/docker/code

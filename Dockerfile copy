@@ -11,8 +11,8 @@ RUN apk update && apk upgrade && \
         libpq \
         gcc\
         musl-dev\
-    && apk del build-deps
-    
+    && apk del build-deps && \
+    apk add --no-cache --update nodejs nodejs-npm
 
 ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
