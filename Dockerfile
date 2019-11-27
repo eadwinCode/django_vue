@@ -4,6 +4,7 @@ LABEL maintainer="eadwinCode"
 
 RUN apk update && apk upgrade && \
     echo "**** other packages *****" && \
+    apk add --update npm && \
     apk add --virtual build-deps && \
     apk add --no-cache \
         sqlite \
@@ -11,7 +12,7 @@ RUN apk update && apk upgrade && \
         libpq \
         gcc\
         musl-dev\
-    && apk del build-deps
+    && apk del build-deps 
     
 
 ENV LANG C.UTF-8
@@ -23,13 +24,10 @@ ADD requirements.txt /home/docker/code
 ADD package.json /home/docker/code
 
 RUN pip install --no-cache-dir -r requirements.txt
+RUN npm install && npm install -g parcel
 
 COPY . /home/docker/code/
 
 EXPOSE 80
-
-RUN adduser -D user_vue
-
-USER user_vue
 
 CMD ["python", "manage.py", "runserver"]
