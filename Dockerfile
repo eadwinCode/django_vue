@@ -30,4 +30,8 @@ COPY . /home/docker/code/
 
 EXPOSE 80
 
+RUN adduser -D django_vue
+
+USER django_vue
+
 CMD ["python", "manage.py", "runserver"]
