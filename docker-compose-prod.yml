@@ -5,7 +5,7 @@ services:
     image: mrsme/django_vue
     build: .
     command: >
-      sh -c "python manage.py compress --settings django_vue.prod_settings && \
+      sh -c "python manage.py compress --settings django_vue.prod_settings ;
       gunicorn -w 4 django_vue.wsgi:application --bind 0.0.0.0:8000"
     
     volumes:
