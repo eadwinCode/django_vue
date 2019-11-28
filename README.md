@@ -5,8 +5,15 @@ A quick example of ant-design Vue with django template using Django-Compressor-P
 https://github.com/eadwinCode/django-compressor-parceljs
 
 ## Quick Start
+For development: 
+
 ```docker-compose up --build```
 
+
+For production:
+ ```docker-compose -f docker-compose-prod.yml up --build```
+
+
 ## Preview
-<img src="frontend/Screenshot_2019-11-05%20Vue%20Django%20Testing.png">
+<img src="demo_screen.gif">
 
