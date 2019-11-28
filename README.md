@@ -15,5 +15,5 @@ For production:
 
 
 ## Preview
-<img src="demo_screen.gif">
+<img src="frontend/demo_user.gif">
 
